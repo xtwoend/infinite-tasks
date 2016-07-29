@@ -1,0 +1,1004 @@
+// Color variables (appears count calculates by raw css)
+@color0: #111111; // Appears 14 times
+@color1: #dcdcdc; // Appears 12 times
+@color2: #dddddd; // Appears 7 times
+@color3: #585858; // Appears 7 times
+@color4: #2b2b2b; // Appears 7 times
+@color5: #0c0c0c; // Appears 6 times
+@color6: #333333; // Appears 4 times
+@color7: #666666; // Appears 3 times
+@color8: #fafafa; // Appears 3 times
+@color9: #acbad5; // Appears 3 times
+@color10: #a9b7d1; // Appears 2 times
+@color11: #a8b5cf; // Appears 2 times
+@color12: #afbdd8; // Appears 2 times
+@color13: #fcfcfc; // Appears 2 times
+@color14: #979797; // Appears 2 times
+@color15: #fefefe; // Appears 2 times
+@color16: #aebcd6; // Appears 2 times
+@color17: #f3f3f3; // Appears 2 times
+@color18: #f6f6f6; // Appears 2 times
+@color19: #aab7d1; // Appears 2 times
+@color20: #eaeef1; // Appears 2 times
+@color21: #f9f9f9; // Appears 2 times
+@color22: #eeeeee; // Appears 2 times
+@color23: #a6b4cd; // Appears 2 times
+@color24: #eaeaea; // Appears 2 times
+@color25: #a5b2cb; // Appears 2 times
+@color26: #f1f1f1; // Appears 2 times
+@color27: #ececec; // Appears 2 times
+@color28: #a3b0c9; // Appears 2 times
+@color29: #a2aec7; // Appears 2 times
+@color30: #efefef; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width4: 100%; // Appears 2 times
+
+// Height variables (appears count calculates by raw css)
+@height1: 0; // Appears 3 times
+
+// Height variables (appears count calculates by raw css)
+@height0: 16px; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width0: 16px; // Appears 2 times
+
+table.dataTable {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	border-collapse: separate;
+	border-spacing: 0;
+	box-sizing: content-box;
+	clear: both;
+	clear: both;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+	margin: 0 auto;
+	max-width: none !important;
+	width: @width4;
+	thead {
+		th {
+			border-bottom: 0px solid @border-color;
+			font-weight: bold;
+			padding: 10px 10px;
+			&:active {
+				outline: none;
+			}
+		}
+
+		th:first-child{
+			border-right: 1px solid #ddd;
+		}
+		
+		td {
+			border-bottom: 1px solid @border-color;
+			padding: 10px 18px;
+			&:active {
+				outline: none;
+			}
+		}
+		.sorting {
+			*cursor: hand;
+			background-image: url("../images/sort_both.png");
+			cursor: pointer;
+			&:after {
+				content: "\e150";
+				opacity: 0.2;
+			}
+		}
+		.sorting_asc {
+			*cursor: hand;
+			background-image: url("../images/sort_asc.png");
+			cursor: pointer;
+			&:after {
+				content: "\e155";
+			}
+		}
+		.sorting_desc {
+			*cursor: hand;
+			background-image: url("../images/sort_desc.png");
+			cursor: pointer;
+			&:after {
+				content: "\e156";
+			}
+		}
+		.sorting_asc_disabled {
+			background-image: url("../images/sort_asc_disabled.png");
+			&:after {
+				color: @color22;
+			}
+		}
+		.sorting_desc_disabled {
+			background-image: url("../images/sort_desc_disabled.png");
+			&:after {
+				color: @color22;
+			}
+		}
+	}
+	tfoot {
+		th {
+			border-top: 1px solid @border-color;
+			font-weight: bold;
+			padding: 10px 18px 6px 18px;
+		}
+		td {
+			border-top: 1px solid @border-color;
+			padding: 10px 18px 6px 18px;
+		}
+	}
+	tbody {
+		tr {
+			background-color: #ffffff;
+			> td:first-child{
+				border-right: 1px solid #ddd;
+			}
+		}
+		tr.selected {
+			background-color: #B0BED9;
+		}
+		th {
+			padding: 8px 10px;
+		}
+		td {
+			padding: 8px 10px;
+		}
+		th.dt-body-left {
+			text-align: left;
+		}
+		td.dt-body-left {
+			text-align: left;
+		}
+		th.dt-body-center {
+			text-align: center;
+		}
+		td.dt-body-center {
+			text-align: center;
+		}
+		th.dt-body-right {
+			text-align: right;
+		}
+		td.dt-body-right {
+			text-align: right;
+		}
+		th.dt-body-justify {
+			text-align: justify;
+		}
+		td.dt-body-justify {
+			text-align: justify;
+		}
+		th.dt-body-nowrap {
+			white-space: nowrap;
+		}
+		td.dt-body-nowrap {
+			white-space: nowrap;
+		}
+	}
+	th.dt-left {
+		text-align: left;
+	}
+	td.dt-left {
+		text-align: left;
+	}
+	th.dt-center {
+		text-align: center;
+	}
+	td.dt-center {
+		text-align: center;
+	}
+	td.dataTables_empty {
+		text-align: center;
+		text-align: center;
+	}
+	th.dt-right {
+		text-align: right;
+	}
+	td.dt-right {
+		text-align: right;
+	}
+	th.dt-justify {
+		text-align: justify;
+	}
+	td.dt-justify {
+		text-align: justify;
+	}
+	th.dt-nowrap {
+		white-space: nowrap;
+	}
+	td.dt-nowrap {
+		white-space: nowrap;
+	}
+	th {
+		-moz-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		box-sizing: content-box;
+	}
+	td {
+		-moz-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		box-sizing: content-box;
+	}
+	th.dataTables_empty {
+		text-align: center;
+	}
+	thead  >  tr  >  th {
+		&:active {
+			outline: none;
+		}
+	}
+	thead  >  tr  >  td {
+		&:active {
+			outline: none;
+		}
+	}
+}
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled  {
+	background-position: center right;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: relative;
+}
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td  {
+	border-top: 1px solid @color2;
+}
+table.dataTable.row-border tbody tr:first-child th, table.dataTable.row-border tbody tr:first-child td, table.dataTable.display tbody tr:first-child th, table.dataTable.display tbody tr:first-child td  {
+	border-top: none;
+}
+table.dataTable.cell-border {
+	tbody {
+		th {
+			border-right: 1px solid @color2;
+			border-top: 1px solid @color2;
+		}
+		td {
+			border-right: 1px solid @color2;
+			border-top: 1px solid @color2;
+		}
+		tr {
+			th {
+				&:first-child {
+					border-left: 1px solid @color2;
+				}
+			}
+			td {
+				&:first-child {
+					border-left: 1px solid @color2;
+				}
+			}
+			&:first-child {
+				th {
+					border-top: none;
+				}
+				td {
+					border-top: none;
+				}
+			}
+		}
+	}
+}
+table.dataTable.stripe {
+	tbody {
+		tr.odd {
+			background-color: @color21;
+		}
+		tr.odd.selected {
+			background-color: @color20;
+		}
+	}
+}
+table.dataTable.display {
+	tbody {
+		tr.odd {
+			background-color: @color21;
+		}
+		tr.odd.selected {
+			background-color: @color20;
+		}
+		tr {
+			&:hover {
+				background-color: @color18;
+			}
+			&:hover.selected {
+				background-color: @color19;
+			}
+			&:hover  >  .sorting_1 {
+				background-color: @color24;
+			}
+			&:hover  >  .sorting_2 {
+				background-color: @color27;
+			}
+			&:hover  >  .sorting_3 {
+				background-color: @color30;
+			}
+			&:hover.selected  >  .sorting_1 {
+				background-color: @color29;
+			}
+			&:hover.selected  >  .sorting_2 {
+				background-color: @color28;
+			}
+			&:hover.selected  >  .sorting_3 {
+				background-color: @color25;
+			}
+		}
+		tr.odd  >  .sorting_1 {
+			background-color: @color26;
+		}
+		tr.odd  >  .sorting_2 {
+			background-color: @color17;
+		}
+		tr.odd  >  .sorting_3 {
+			background-color: whitesmoke;
+		}
+		tr.odd.selected  >  .sorting_1 {
+			background-color: @color23;
+		}
+		tr.odd.selected  >  .sorting_2 {
+			background-color: @color11;
+		}
+		tr.odd.selected  >  .sorting_3 {
+			background-color: @color10;
+		}
+		tr.even  >  .sorting_1 {
+			background-color: @color8;
+		}
+		tr.even  >  .sorting_2 {
+			background-color: @color13;
+		}
+		tr.even  >  .sorting_3 {
+			background-color: @color15;
+		}
+		tr.even.selected  >  .sorting_1 {
+			background-color: @color9;
+		}
+		tr.even.selected  >  .sorting_2 {
+			background-color: @color16;
+		}
+		tr.even.selected  >  .sorting_3 {
+			background-color: @color12;
+		}
+	}
+}
+table.dataTable.hover {
+	tbody {
+		tr {
+			&:hover {
+				background-color: @color18;
+			}
+			&:hover.selected {
+				background-color: @color19;
+			}
+		}
+	}
+}
+table.dataTable.order-column tbody tr  >  .sorting_1, table.dataTable.order-column tbody tr  >  .sorting_2, table.dataTable.order-column tbody tr  >  .sorting_3, table.dataTable.display tbody tr  >  .sorting_1, table.dataTable.display tbody tr  >  .sorting_2, table.dataTable.display tbody tr  >  .sorting_3  {
+	background-color: @color8;
+}
+table.dataTable.order-column tbody tr.selected  >  .sorting_1, table.dataTable.order-column tbody tr.selected  >  .sorting_2, table.dataTable.order-column tbody tr.selected  >  .sorting_3, table.dataTable.display tbody tr.selected  >  .sorting_1, table.dataTable.display tbody tr.selected  >  .sorting_2, table.dataTable.display tbody tr.selected  >  .sorting_3  {
+	background-color: @color9;
+}
+table.dataTable.order-column.stripe {
+	tbody {
+		tr.odd  >  .sorting_1 {
+			background-color: @color26;
+		}
+		tr.odd  >  .sorting_2 {
+			background-color: @color17;
+		}
+		tr.odd  >  .sorting_3 {
+			background-color: whitesmoke;
+		}
+		tr.odd.selected  >  .sorting_1 {
+			background-color: @color23;
+		}
+		tr.odd.selected  >  .sorting_2 {
+			background-color: @color11;
+		}
+		tr.odd.selected  >  .sorting_3 {
+			background-color: @color10;
+		}
+		tr.even  >  .sorting_1 {
+			background-color: @color8;
+		}
+		tr.even  >  .sorting_2 {
+			background-color: @color13;
+		}
+		tr.even  >  .sorting_3 {
+			background-color: @color15;
+		}
+		tr.even.selected  >  .sorting_1 {
+			background-color: @color9;
+		}
+		tr.even.selected  >  .sorting_2 {
+			background-color: @color16;
+		}
+		tr.even.selected  >  .sorting_3 {
+			background-color: @color12;
+		}
+	}
+}
+table.dataTable.order-column.hover {
+	tbody {
+		tr {
+			&:hover  >  .sorting_1 {
+				background-color: @color24;
+			}
+			&:hover  >  .sorting_2 {
+				background-color: @color27;
+			}
+			&:hover  >  .sorting_3 {
+				background-color: @color30;
+			}
+			&:hover.selected  >  .sorting_1 {
+				background-color: @color29;
+			}
+			&:hover.selected  >  .sorting_2 {
+				background-color: @color28;
+			}
+			&:hover.selected  >  .sorting_3 {
+				background-color: @color25;
+			}
+		}
+	}
+}
+table.dataTable.no-footer {
+	border-bottom: 1px solid @border-color;
+}
+table.dataTable.nowrap {
+	th {
+		white-space: nowrap;
+		white-space: nowrap;
+	}
+	td {
+		white-space: nowrap;
+		white-space: nowrap;
+	}
+}
+table.dataTable.compact {
+	thead {
+		th {
+			padding: 4px 17px 4px 4px;
+		}
+		td {
+			padding: 4px 17px 4px 4px;
+		}
+	}
+	tfoot {
+		th {
+			padding: 4px;
+		}
+		td {
+			padding: 4px;
+		}
+	}
+	tbody {
+		th {
+			padding: 4px;
+		}
+		td {
+			padding: 4px;
+		}
+	}
+}
+table.dataTable thead th.dt-head-left, table.dataTable thead td.dt-head-left, table.dataTable tfoot th.dt-head-left, table.dataTable tfoot td.dt-head-left  {
+	text-align: left;
+}
+table.dataTable thead th.dt-head-center, table.dataTable thead td.dt-head-center, table.dataTable tfoot th.dt-head-center, table.dataTable tfoot td.dt-head-center  {
+	text-align: center;
+}
+table.dataTable thead th.dt-head-right, table.dataTable thead td.dt-head-right, table.dataTable tfoot th.dt-head-right, table.dataTable tfoot td.dt-head-right  {
+	text-align: right;
+}
+table.dataTable thead th.dt-head-justify, table.dataTable thead td.dt-head-justify, table.dataTable tfoot th.dt-head-justify, table.dataTable tfoot td.dt-head-justify  {
+	text-align: justify;
+}
+table.dataTable thead th.dt-head-nowrap, table.dataTable thead td.dt-head-nowrap, table.dataTable tfoot th.dt-head-nowrap, table.dataTable tfoot td.dt-head-nowrap  {
+	white-space: nowrap;
+}
+.dataTables_wrapper {
+	*zoom: 1;
+	clear: both;
+	position: relative;
+	zoom: 1;
+	.dataTables_length {
+		float: left;
+	}
+	.dataTables_filter {
+		float: right;
+		margin-top: 0.5em;
+		text-align: right;
+		input {
+			margin-left: 0.5em;
+		}
+	}
+	.dataTables_info {
+		clear: both;
+		float: left;
+		padding-top: 0.755em;
+	}
+	.dataTables_paginate {
+		float: right;
+		margin-top: 0.5em;
+		padding-top: 0.2em;
+		text-align: right;
+		.paginate_button {
+			*cursor: hand;
+			// border-radius: 2px;
+			// border: 1px solid transparent;
+			box-sizing: border-box;
+			color: @color6 !important;
+			cursor: pointer;
+			display: inline-block;
+			margin-left: 2px;
+			min-width: 1.2em;
+			padding: 0.4em 0.5em;
+			text-align: center;
+			text-decoration: none !important;
+			&:hover {
+				background-color: @color3;
+				// background: -moz-linear-gradient(top, @color3 0%, @color0 100%);
+				// background: -ms-linear-gradient(top, @color3 0%, @color0 100%);
+				// background: -o-linear-gradient(top, @color3 0%, @color0 100%);
+				// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @color3), color-stop(100%, @color0));
+				// background: -webkit-linear-gradient(top, @color3 0%, @color0 100%);
+				// background: linear-gradient(to bottom, @color3 0%, @color0 100%);
+				// border: 1px solid @color0;
+				color: white !important;
+			}
+			&:active {
+				background-color: @color4;
+				// background: -moz-linear-gradient(top, @color4 0%, @color5 100%);
+				// background: -ms-linear-gradient(top, @color4 0%, @color5 100%);
+				// background: -o-linear-gradient(top, @color4 0%, @color5 100%);
+				// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @color4), color-stop(100%, @color5));
+				// background: -webkit-linear-gradient(top, @color4 0%, @color5 100%);
+				// background: linear-gradient(to bottom, @color4 0%, @color5 100%);
+				// box-shadow: inset 0 0 3px @color0;
+				// outline: none;
+			}
+		}
+		.paginate_button.current {
+			background-color: #e0eaec;
+			// background: -moz-linear-gradient(top, white 0%, @color1 100%);
+			// background: -ms-linear-gradient(top, white 0%, @color1 100%);
+			// background: -o-linear-gradient(top, white 0%, @color1 100%);
+			// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, @color1));
+			// background: -webkit-linear-gradient(top, white 0%, @color1 100%);
+			// background: linear-gradient(to bottom, white 0%, @color1 100%);
+			// border: 1px solid @color14;
+			color: @color6 !important;
+			&:hover {
+				background-color: #e0eaec;
+				// background: -moz-linear-gradient(top, white 0%, @color1 100%);
+				// background: -ms-linear-gradient(top, white 0%, @color1 100%);
+				// background: -o-linear-gradient(top, white 0%, @color1 100%);
+				// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, @color1));
+				// background: -webkit-linear-gradient(top, white 0%, @color1 100%);
+				// background: linear-gradient(to bottom, white 0%, @color1 100%);
+				// border: 1px solid @color14;
+				color: @color6 !important;
+			}
+		}
+		.paginate_button.disabled {
+			background: transparent;
+			// border: 1px solid transparent;
+			box-shadow: none;
+			color: @color7 !important;
+			cursor: default;
+			&:hover {
+				background: transparent;
+				// border: 1px solid transparent;
+				box-shadow: none;
+				color: @color7 !important;
+				cursor: default;
+			}
+			&:active {
+				background: transparent;
+				// border: 1px solid transparent;
+				box-shadow: none;
+				color: @color7 !important;
+				cursor: default;
+			}
+		}
+		.ellipsis {
+			padding: 0 1em;
+		}
+	}
+	.dataTables_processing {
+		background-color: white;
+		background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+		background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+		background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.9)), color-stop(75%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0)));
+		background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+		background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+		font-size: 1.2em;
+		height: 40px;
+		left: 50%;
+		margin-left: -50%;
+		margin-top: -25px;
+		padding-top: 20px;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: @width4;
+	}
+	.dataTables_scroll {
+		clear: both;
+		div.dataTables_scrollBody {
+			*margin-top: -1px;
+			-webkit-overflow-scrolling: touch;
+			th {
+				vertical-align: middle;
+			}
+			td {
+				vertical-align: middle;
+			}
+			th  >  div.dataTables_sizing {
+				height: @height1;
+				margin: 0 !important;
+				overflow: hidden;
+				padding: 0 !important;
+			}
+			td  >  div.dataTables_sizing {
+				height: @height1;
+				margin: 0 !important;
+				overflow: hidden;
+				padding: 0 !important;
+			}
+		}
+	}
+	&:after {
+		clear: both;
+		content: "";
+		display: block;
+		height: @height1;
+		visibility: hidden;
+	}
+}
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate  {
+	color: @color6;
+}
+.dataTables_wrapper.no-footer {
+	.dataTables_scrollBody {
+		border-bottom: 1px solid @color0;
+	}
+	div.dataTables_scrollHead {
+		table {
+			border-bottom: none;
+		}
+	}
+	div.dataTables_scrollBody {
+		table {
+			border-bottom: none;
+		}
+	}
+}
+
+div.dataTables_wrapper {
+	div.dataTables_length {
+		label {
+			font-weight: normal;
+			text-align: left;
+			white-space: nowrap;
+		}
+		select {
+			display: inline-block;
+			width: 75px;
+		}
+	}
+	div.dataTables_filter {
+		text-align: right;
+		display:none;
+		label {
+			font-weight: normal;
+			text-align: left;
+			white-space: nowrap;
+		}
+		input {
+			display: inline-block;
+			margin-left: 0.5em;
+			width: auto;
+		}
+	}
+	div.dataTables_info {
+		padding: 8px;
+		white-space: nowrap;
+	}
+	div.dataTables_paginate {
+		margin: 0;
+		text-align: right;
+		white-space: nowrap;
+		ul.pagination {
+			margin: 2px 0;
+			white-space: nowrap;
+		}
+	}
+	div.dataTables_processing {
+		left: 50%;
+		margin-left: -100px;
+		margin-top: -26px;
+		padding: 1em 0;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: 200px;
+	}
+}
+table.dataTable thead  >  tr  >  th.sorting_asc, table.dataTable thead  >  tr  >  th.sorting_desc, table.dataTable thead  >  tr  >  th.sorting, table.dataTable thead  >  tr  >  td.sorting_asc, table.dataTable thead  >  tr  >  td.sorting_desc, table.dataTable thead  >  tr  >  td.sorting  {
+	padding-right: 30px;
+}
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after  {
+	bottom: 8px;
+	display: block;
+	font-family: 'Glyphicons Halflings';
+	opacity: 0.5;
+	position: absolute;
+	right: 8px;
+}
+div.dataTables_scrollHead {
+	table.dataTable {
+		margin-bottom: 0 !important;
+	}
+	table.table-bordered {
+		border-bottom-width: 0;
+	}
+}
+div.dataTables_scrollBody {
+	table {
+		border-top: none;
+		margin-bottom: 0 !important;
+		margin-top: 0 !important;
+		thead {
+			.sorting {
+				&:after {
+					display: none;
+				}
+			}
+			.sorting_asc {
+				&:after {
+					display: none;
+				}
+			}
+			.sorting_desc {
+				&:after {
+					display: none;
+				}
+			}
+		}
+		tbody {
+			tr {
+				&:first-child {
+					th {
+						border-top: none;
+					}
+					td {
+						border-top: none;
+					}
+				}
+			}
+		}
+	}
+}
+div.dataTables_scrollFoot {
+	table {
+		border-top: none;
+		margin-top: 0 !important;
+	}
+}
+table.dataTable.table-condensed  >  thead  >  tr  >  th {
+	padding-right: 20px;
+}
+table.dataTable.table-condensed {
+	.sorting {
+		&:after {
+			right: 6px;
+			top: 6px;
+		}
+	}
+	.sorting_asc {
+		&:after {
+			right: 6px;
+			top: 6px;
+		}
+	}
+	.sorting_desc {
+		&:after {
+			right: 6px;
+			top: 6px;
+		}
+	}
+}
+table.table-bordered.dataTable {
+	border-collapse: separate !important;
+	th {
+		border-left-width: 0;
+	}
+	td {
+		border-left-width: 0;
+	}
+	tbody {
+		th {
+			border-bottom-width: 0;
+		}
+		td {
+			border-bottom-width: 0;
+		}
+	}
+}
+table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable td:last-child, table.table-bordered.dataTable td:last-child  {
+	border-right-width: 0;
+}
+div.table-responsive   >   div.dataTables_wrapper  >  div.row {
+	margin: -1px 0 0 0;
+}
+div.table-responsive  >  div.dataTables_wrapper  >  div.row  >  div[class^="col-"] {
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+
+table.dataTable {
+	tbody > tr.selected {
+		background-color:#eaeef1;
+	}
+	tbody > tr > .selected {
+		background-color:#eaeef1;
+	}
+	th.zonk{
+		max-width: 10px;
+		width:10px;
+	}
+	th.extra{
+		width: 30px;
+		max-width: 30px;
+	}
+	td.center, th.center {
+		text-align: center !important;
+	} 
+	td.select-checkbox, th.select-checkbox {
+		position:relative;
+		max-width: 20px;
+		width: 20px;
+		&:before {
+			border-radius:1px;
+			border:1px solid #ddd;
+			box-sizing:border-box;
+			content:' ';
+			display:block;
+			height:@height0;
+			left:50%;
+			margin-left:-6px;
+			margin-top:-6px;
+			position:absolute;
+			top:1.2em;
+			width:@width0;
+		}
+		&:after {
+			box-sizing:border-box;
+			display:block;
+			height:@height0;
+			left:50%;
+			position:absolute;
+			top:1.2em;
+			width:@width0;
+		}
+	}
+	
+	tr.selected {
+		td.select-checkbox, th.select-checkbox  {
+			&:after {
+				content:'\2714';
+				margin-left:-5px;
+				margin-top:-8px;
+				text-align:center;
+				// text-shadow:1px 1px @color0, -1px -1px @color0, 1px -1px @color0, -1px 1px @color0;
+			}
+		}
+	}
+
+}
+table.dataTable.stripe tbody > tr.odd.selected,table.dataTable.stripe tbody > tr.odd > .selected,table.dataTable.display tbody > tr.odd.selected,table.dataTable.display tbody > tr.odd > .selected {
+	background-color:#eaeef1;
+}
+table.dataTable.hover tbody > tr.selected:hover,table.dataTable.hover tbody > tr > .selected:hover,table.dataTable.display tbody > tr.selected:hover,table.dataTable.display tbody > tr > .selected:hover {
+	background-color:#aab7d1;
+}
+table.dataTable.order-column tbody > tr.selected > .sorting_1,table.dataTable.order-column tbody > tr.selected > .sorting_2,table.dataTable.order-column tbody > tr.selected > .sorting_3,table.dataTable.order-column tbody > tr > .selected,table.dataTable.display tbody > tr.selected > .sorting_1,table.dataTable.display tbody > tr.selected > .sorting_2,table.dataTable.display tbody > tr.selected > .sorting_3,table.dataTable.display tbody > tr > .selected {
+	background-color:@color1;
+}
+table.dataTable.display {
+	tbody > tr.odd.selected > .sorting_1 {
+		background-color:@color2;
+	}
+	tbody > tr.odd.selected > .sorting_2 {
+		background-color:@color7;
+	}
+	tbody > tr.odd.selected > .sorting_3 {
+		background-color:@color9;
+	}
+	tbody > tr.even.selected > .sorting_1 {
+		background-color:@color1;
+	}
+	tbody > tr.even.selected > .sorting_2 {
+		background-color:@color8;
+	}
+	tbody > tr.even.selected > .sorting_3 {
+		background-color:@color6;
+	}
+	tbody > tr.odd > .selected {
+		background-color:@color2;
+	}
+	tbody > tr.even > .selected {
+		background-color:@color1;
+	}
+	tbody > tr.selected {
+		&:hover > .sorting_1 {
+			background-color:@color3;
+		}
+		&:hover > .sorting_2 {
+			background-color:@color5;
+		}
+		&:hover > .sorting_3 {
+			background-color:@color4;
+		}
+	}
+}
+table.dataTable.order-column.stripe {
+	tbody > tr.odd.selected > .sorting_1 {
+		background-color:@color2;
+	}
+	tbody > tr.odd.selected > .sorting_2 {
+		background-color:@color7;
+	}
+	tbody > tr.odd.selected > .sorting_3 {
+		background-color:@color9;
+	}
+	tbody > tr.even.selected > .sorting_1 {
+		background-color:@color1;
+	}
+	tbody > tr.even.selected > .sorting_2 {
+		background-color:@color8;
+	}
+	tbody > tr.even.selected > .sorting_3 {
+		background-color:@color6;
+	}
+	tbody > tr.odd > .selected {
+		background-color:@color2;
+	}
+	tbody > tr.even > .selected {
+		background-color:@color1;
+	}
+}
+table.dataTable.order-column.hover {
+	tbody > tr.selected {
+		&:hover > .sorting_1 {
+			background-color:@color3;
+		}
+		&:hover > .sorting_2 {
+			background-color:@color5;
+		}
+		&:hover > .sorting_3 {
+			background-color:@color4;
+		}
+	}
+}
+table.dataTable.display tbody > tr:hover > .selected,table.dataTable.display tbody > tr > .selected:hover,table.dataTable.order-column.hover tbody > tr:hover > .selected,table.dataTable.order-column.hover tbody > tr > .selected:hover {
+	background-color:@color3;
+}
+div.dataTables_wrapper {
+	span.select-info {
+		margin-left:0.5em;
+	}
+	span.select-item {
+		margin-left:0.5em;
+	}
+}
