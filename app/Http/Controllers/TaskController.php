@@ -48,13 +48,14 @@ class TaskController extends Controller
             'date' => 'required',
         ]);
 
-        $row = $this->tasks->create([
-            'title' => $request->title,
-            'description' => $request->description,
-            'date' => $request->date,
-            'priority' => $request->get('priority', 0),
-            'status' => $request->get('status', 0),
-        ]);
+        $row = $this->tasks;
+        $row->title = $request->title;
+        $row->description = $request->description;
+        $row->date = $request->date;
+        $row->priority = $request->get('priority', 0);
+        $row->status = $request->get('status', 0);
+        $row->user_id = auth()->user()->id;
+        $row->save();
 
         return redirect()->route('tasks.index')->with('message', 'data berhasil di tambahkan');
     }
